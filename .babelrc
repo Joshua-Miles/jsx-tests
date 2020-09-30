@@ -1,0 +1,14 @@
+{
+    "plugins": [
+         [ "@babel/plugin-transform-react-jsx", { "runtime": "automatic", "importSource": "lib" } ],
+         ["module-resolver", {
+            "root": ["./"],
+            "alias": {
+              "templates": "./templates",
+              "lib": "./lib",
+              "themes": "./themes"
+            }
+          }],
+         "babel-plugin-transform-es2015-modules-commonjs"
+    ]
+}
